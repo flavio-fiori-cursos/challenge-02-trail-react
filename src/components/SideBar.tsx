@@ -7,7 +7,7 @@ interface SideBarProps {
         title: string;
     }>;
     selectedGenreId: number;
-    onHandleClickButton: () => void;
+    onHandleClickButton: (id:number) => void;
 }
 
 export function SideBar({ genres, selectedGenreId, onHandleClickButton }: SideBarProps) {
